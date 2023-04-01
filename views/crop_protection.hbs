@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="change_to_english()">English</button>
+    <button onclick="change_to_hindi()">Hindi</button>
+    <div id="english">
+        <p>
+            <h3>Crop protection</h3>
+            Crop protection is the science and practice of managing plant diseases, weeds, and other pests (both vertebrate and invertebrate) that damage crops and forestry. Crops include field crops (maize, wheat, rice, etc.), vegetable crops (potatoes, cabbages, etc.), and fruits. The crops in the field are exposed to many factors. The crop plants may be damaged by insects, birds, rodents, bacteria, etc. Crop protection encompasses:
+
+            1)All practical aspects of pest, disease, and weed control, including the following topics:
+            2)Control of animal pests of world crops.
+            3)Control of diseases of crop plants caused by microorganisms.
+            4)Control of weeds and integrated management.
+            5)Economic considerations.
+            6)Using pest resistant varieties of crop.
+        </p>
+    </div>
+
+    <div id="hindi">
+        <h3>फसल सुरक्षा</h3>
+             फसल संरक्षण पौधों की बीमारियों, खरपतवारों और अन्य कीटों (दोनों कशेरुक और अकशेरूकीय) के प्रबंधन का विज्ञान और अभ्यास है जो फसलों और वानिकी को नुकसान पहुंचाता है। फ़सलों में खेत की फ़सलें (मक्का, गेहूँ, चावल, आदि), सब्जियों की फ़सलें (आलू, गोभी, आदि), और फल शामिल हैं। खेत में फसलें कई कारकों के संपर्क में हैं। फसल के पौधे कीड़ों, पक्षियों, कृन्तकों, जीवाणुओं आदि से क्षतिग्रस्त हो सकते हैं। फसल सुरक्षा में शामिल हैं:
+
+             1) निम्नलिखित विषयों सहित कीट, रोग और खरपतवार नियंत्रण के सभी व्यावहारिक पहलू:
+             2) विश्व फसलों के पशु कीटों का नियंत्रण।
+             3) सूक्ष्मजीवों के कारण फसल पौधों के रोगों का नियंत्रण।
+             4) खरपतवारों का नियंत्रण और एकीकृत प्रबंधन।
+             5) आर्थिक विचार।
+             6) फसल की कीट प्रतिरोधी किस्मों का उपयोग करना।
+         </p>
+    </div>
+    <script>
+         document.getElementById("hindi").style.display="none";
+        function change_to_english(){
+            document.getElementById("english").style.display="block";
+            document.getElementById("hindi").style.display="none";
+        }
+        function change_to_hindi(){
+            document.getElementById("english").style.display="none";
+            document.getElementById("hindi").style.display="block";
+
+        }
+    </script>
+</body>
+</html>

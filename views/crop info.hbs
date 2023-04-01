@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            height: 100%;
+        }
+        .bdy{
+            background-image: url("sun.jpg"); 
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+         }
+        .container {
+             border: solid 2px black; 
+             text-decoration: none;
+             padding: 10px;
+             height: 50px;
+             font-size: 20px;
+            background-color: white;
+            border-radius: 20px;
+            opacity: 0.9;
+         
+
+
+
+        }
+
+        
+
+        .butt {
+            height: 80px;
+            {{!-- color: yellow; --}}
+    
+            color: black;
+            {{!-- background-image: url("images.png"); --}}
+            {{!-- background-repeat: no-repeat;
+            background-position-x: 20px;
+            background-position-y: 40px; --}}
+
+
+        }
+
+        .head {
+            text-align: center;
+            font-size: 50px;
+            height: 50px;
+            border: solid 2px black;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            color: red;
+            background-color: black;
+
+        }
+
+        .l {
+            margin-left: 500px;
+            margin-top: 100px;
+
+        }
+
+        #text {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        #parth {
+            font-size: 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        #o {
+            border: 2pxsolid black;
+            border-radius: 20px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            width: 100px;
+        }
+        #button {
+            border: 2px solid black;
+            position: fixed;
+            margin-left: 90%;
+            height: 30px;
+            width: 70px;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+        #submit{
+            margin-left: 120px;
+            font-size: 20px;
+            border-radius: 10px;
+
+        }
+        .l{
+            border: solid black 2px;
+            width: 350px;
+            margin-left: 35%;
+            padding: 50px;
+            border-radius: 10px;
+            background-color: yellow;
+            height: 300px;
+            opacity: 0.9;
+        }
+        .b{
+            margin-top: 0px;
+        }
+        a{
+            margin-left: 35px;
+            font-size: 25px;
+            text-decoration: none;
+            color: black;
+        }
+        .pj{
+            margin-left: 60px;
+            
+        }
+    </style>
+    {{!-- <script src="Parth.js"></script> --}}
+</head>
+
+<body>
+    <div class="bdy">
+    <div class="head">
+        <strong>
+            <tr>h</tr>&nbsp;<tr>a</tr>&nbsp;<em>
+                <tr>k</tr>&nbsp;
+            </em>
+            <tr>c</tr>&nbsp;<tr>e</tr>&nbsp;<em>
+                <tr>z</tr>
+            </em>
+        </strong>
+    </div>
+    
+    <div class="container">
+        <div class="butt">
+            {{!-- <a id="button" href="/login">Login<a> --}}
+            <div class="b">
+                <a href="/" class="sticky">Home</a>
+                <a href="/contactus" class="sticky">Contact Us</a>
+                <a href="/cropinfo" class="sticky">Crop Info</a>
+                <a href="/discussion" class="sticky">Discuss</a>
+                <a href="/learning" class="sticky">Learn processing</a>
+                <a href="/review" class="sticky">Review</a>
+            </div>
+            <!-- <h1 class="shet">शेतकरी राजा</h1> -->
+        </div>
+    </div>
+    <div class="l">
+        <div class="pj">
+        <span id="text">Crop name</span> &nbsp;&nbsp; 
+        <br>
+        <br>
+        <form action="" method="get">
+            <select name="" id="textttt" style="font-size: 25px; width:250px"> 
+                <option value="wheat">Wheat(gehu)</option>
+                <option value="Jawar">Millets(bajra)</option>
+                <option value="chana">Gram</option>
+                <option value="rice">Rice</option>
+                <option value="Maize">Maize(maka)</option>
+                <option value="Pulses">Pulses</option>
+                <option value="Sugarcane">Sugarcane(ganna)</option>
+                <option value="Tea">Tea(chay)</option>
+                <option value="Coffee">coffee</option>
+                <option value="Cotton">Cotton(kapus)</option>
+        </select>
+        </form>
+        </div>
+        {{!-- <input type="text" placeholder="search your crop here" id="parth"> --}}
+        <br>
+        <br>
+       <br>
+        <input id="submit" type="submit"  onclick="vit()">
+        
+        {{!-- <input id="submit" type="submit">  --}}
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a id="submit" href="/cropinfo/click_me" >Click Me</a>
+        <br>
+        <h3>Click here if you want to know about another crop</h3>
+        
+    </div>
+    </div>
+    {{!-- <script src="script.js"></script> --}}
+    <script>
+        function click(){
+            window.location.href="/cropinfo/click_me"
+        }
+        function vit(){
+        var p= document.getElementById("textttt").value;
+        if(p=="wheat" || p=="गेहू"){
+            window.location.href= "/cropinfo/wheat"
+            return false;
+        }
+        else{
+            if(p=="gram"|| p=="chana"){
+			    window.location.href= "/cropinfo/chana"
+        	    return false;
+            }
+    	    else{
+                if(p=="Jawar"){
+                    window.location.href= "/cropinfo/bajra"
+        	        return false;
+                }
+                else{
+        	        alert("wrong input")
+        	        return ;
+                }
+    	    }
+        }
+
+    }
+    const text='{"name":"parth" , "contact": {"pj":"9860228633","rj":"9960231213"}}'
+    const obj= JSON.parse(text);
+    console.log(obj.name);
+    </script>
+</body>
+
+</html>

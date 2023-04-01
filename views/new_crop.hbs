@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            height:100%;
+        }
+        .bdy{
+            background-image: url("homfarm.jpg"); 
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+         }
+         .container{
+            height: 200px;
+            border: solid black 2px;
+            border-radius: 20px;
+            width: 500px;
+            margin-left: 300px;
+            margin-top: 200px;
+            padding: 20px;
+         }
+         input{
+            padding: 10px;
+            margin-left: 50px;
+            margin-top: 20px;
+            border-radius: 15px;
+            width: 300px;
+         }
+          #submit{
+            text-decoration: none;
+            margin-left: 150px;
+            font-size: 20px;
+            border-radius: 10px;
+
+        }
+         </style>
+</head>
+<body>
+    <div class="container">
+        <form action="/cropinfo/click_me/submit" method="post" >
+            <input type="text" name="new_crop" placeholder="Enter crop name that you want info">
+            <br>
+            <input type="text" name="email" placeholder="Enter your email">
+            <br>
+            <br>
+            {{!-- <a id="submit" href="" >Submit</a> --}}
+            <button class="lav" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
